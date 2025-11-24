@@ -1,0 +1,3671 @@
+testName: "Badanie Inżynierskie"
+testId: "inzynierka_bartass"
+bufferSize: 4096
+stopOnErrors: true
+showButtonPreviousPage: true
+remoteService: "service/write.php"
+
+# Globalne ustawienie losowania
+randomize: true
+
+pages:
+  # ==========================================================
+  # INSTRUKCJA WSTĘPNA
+  # ==========================================================
+  - type: generic
+    id: "intro"
+    name: "Instrukcja DCR"
+    content: "<h3>Witaj!</h3><p>Proszę założyć słuchawki. W pierwszej części oceniasz jakość próbek względem Referencji.</p>"
+
+  # ==========================================================
+  # CZĘŚĆ 1: MUSHRA
+  # ==========================================================
+  
+  # --- CLASSICS ---
+  - 
+    - "random"
+    - type: mushra
+      id: "classics_01"
+      name: "Classics - Test_04"
+      reference: "configs/resources/audio/classics/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/classics/AAC/classics_aac_96kbps.wav" }
+    - type: mushra
+      id: "classics_02"
+      name: "Classics - Test_11"
+      reference: "configs/resources/audio/classics/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/classics/AAC/classics_aac_128kbps.wav" }
+    - type: mushra
+      id: "classics_03"
+      name: "Classics - Test_01"
+      reference: "configs/resources/audio/classics/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/classics/AAC/classics_aac_192kbps.wav" }
+    - type: mushra
+      id: "classics_04"
+      name: "Classics - Test_09"
+      reference: "configs/resources/audio/classics/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/classics/AAC/classics_aac_256kbps.wav" }
+    - type: mushra
+      id: "classics_05"
+      name: "Classics - Test_14"
+      reference: "configs/resources/audio/classics/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/classics/MP3/classics_mp3_64kbps.wav" }
+    - type: mushra
+      id: "classics_06"
+      name: "Classics - Test_07"
+      reference: "configs/resources/audio/classics/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/classics/MP3/classics_mp3_96kbps.wav" }
+    - type: mushra
+      id: "classics_07"
+      name: "Classics - Test_02"
+      reference: "configs/resources/audio/classics/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/classics/MP3/classics_mp3_128kbps.wav" }
+    - type: mushra
+      id: "classics_08"
+      name: "Classics - Test_10"
+      reference: "configs/resources/audio/classics/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/classics/MP3/classics_mp3_192kbps.wav" }
+    - type: mushra
+      id: "classics_09"
+      name: "Classics - Test_05"
+      reference: "configs/resources/audio/classics/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/classics/MP3/classics_mp3_256kbps.wav" }
+    - type: mushra
+      id: "classics_10"
+      name: "Classics - Test_13"
+      reference: "configs/resources/audio/classics/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/classics/Opus/classics_opus_64kbps.wav" }
+    - type: mushra
+      id: "classics_11"
+      name: "Classics - Test_08"
+      reference: "configs/resources/audio/classics/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/classics/Opus/classics_opus_96kbps.wav" }
+    - type: mushra
+      id: "classics_12"
+      name: "Classics - Test_03"
+      reference: "configs/resources/audio/classics/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/classics/Opus/classics_opus_128kbps.wav" }
+    - type: mushra
+      id: "classics_13"
+      name: "Classics - Test_12"
+      reference: "configs/resources/audio/classics/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/classics/Opus/classics_opus_192kbps.wav" }
+    - type: mushra
+      id: "classics_14"
+      name: "Classics - Test_06"
+      reference: "configs/resources/audio/classics/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/classics/Opus/classics_opus_256kbps.wav" }
+
+  # --- FOLK (MUSHRA) ---
+  - 
+    - "random"
+    - type: mushra
+      id: "folk_01"
+      name: "Folk - Test_09"
+      reference: "configs/resources/audio/folk/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/folk/AAC/folk_aac_96kbps.wav" }
+    - type: mushra
+      id: "folk_02"
+      name: "Folk - Test_02"
+      reference: "configs/resources/audio/folk/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/folk/AAC/folk_aac_128kbps.wav" }
+    - type: mushra
+      id: "folk_03"
+      name: "Folk - Test_14"
+      reference: "configs/resources/audio/folk/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/folk/AAC/folk_aac_192kbps.wav" }
+    - type: mushra
+      id: "folk_04"
+      name: "Folk - Test_05"
+      reference: "configs/resources/audio/folk/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/folk/AAC/folk_aac_256kbps.wav" }
+    - type: mushra
+      id: "folk_05"
+      name: "Folk - Test_01"
+      reference: "configs/resources/audio/folk/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/folk/MP3/folk_mp3_64kbps.wav" }
+    - type: mushra
+      id: "folk_06"
+      name: "Folk - Test_11"
+      reference: "configs/resources/audio/folk/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/folk/MP3/folk_mp3_96kbps.wav" }
+    - type: mushra
+      id: "folk_07"
+      name: "Folk - Test_07"
+      reference: "configs/resources/audio/folk/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/folk/MP3/folk_mp3_128kbps.wav" }
+    - type: mushra
+      id: "folk_08"
+      name: "Folk - Test_06"
+      reference: "configs/resources/audio/folk/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/folk/MP3/folk_mp3_192kbps.wav" }
+    - type: mushra
+      id: "folk_09"
+      name: "Folk - Test_03"
+      reference: "configs/resources/audio/folk/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/folk/MP3/folk_mp3_256kbps.wav" }
+    - type: mushra
+      id: "folk_10"
+      name: "Folk - Test_13"
+      reference: "configs/resources/audio/folk/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/folk/Opus/folk_opus_64kbps.wav" }
+    - type: mushra
+      id: "folk_11"
+      name: "Folk - Test_07"
+      reference: "configs/resources/audio/folk/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/folk/Opus/folk_opus_96kbps.wav" }
+    - type: mushra
+      id: "folk_12"
+      name: "Folk - Test_04"
+      reference: "configs/resources/audio/folk/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/folk/Opus/folk_opus_128kbps.wav" }
+    - type: mushra
+      id: "folk_13"
+      name: "Folk - Test_10"
+      reference: "configs/resources/audio/folk/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/folk/Opus/folk_opus_192kbps.wav" }
+    - type: mushra
+      id: "folk_14"
+      name: "Folk - Test_12"
+      reference: "configs/resources/audio/folk/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/folk/Opus/folk_opus_256kbps.wav" }
+
+  # --- JAZZ 1 (MUSHRA) ---
+  - 
+    - "random"
+    - type: mushra
+      id: "jazz1_01"
+      name: "Jazz 1 - Test_03"
+      reference: "configs/resources/audio/jazz1/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/jazz1/AAC/jazz1_aac_96kbps.wav" }
+    - type: mushra
+      id: "jazz1_02"
+      name: "Jazz 1 - Test_10"
+      reference: "configs/resources/audio/jazz1/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/jazz1/AAC/jazz1_aac_128kbps.wav" }
+    - type: mushra
+      id: "jazz1_03"
+      name: "Jazz 1 - Test_14"
+      reference: "configs/resources/audio/jazz1/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/jazz1/AAC/jazz1_aac_192kbps.wav" }
+    - type: mushra
+      id: "jazz1_04"
+      name: "Jazz 1 - Test_01"
+      reference: "configs/resources/audio/jazz1/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/jazz1/AAC/jazz1_aac_256kbps.wav" }
+    - type: mushra
+      id: "jazz1_05"
+      name: "Jazz 1 - Test_12"
+      reference: "configs/resources/audio/jazz1/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/jazz1/MP3/jazz1_mp3_64kbps.wav" }
+    - type: mushra
+      id: "jazz1_06"
+      name: "Jazz 1 - Test_08"
+      reference: "configs/resources/audio/jazz1/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/jazz1/MP3/jazz1_mp3_96kbps.wav" }
+    - type: mushra
+      id: "jazz1_07"
+      name: "Jazz 1 - Test_04"
+      reference: "configs/resources/audio/jazz1/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/jazz1/MP3/jazz1_mp3_128kbps.wav" }
+    - type: mushra
+      id: "jazz1_08"
+      name: "Jazz 1 - Test_09"
+      reference: "configs/resources/audio/jazz1/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/jazz1/MP3/jazz1_mp3_192kbps.wav" }
+    - type: mushra
+      id: "jazz1_09"
+      name: "Jazz 1 - Test_06"
+      reference: "configs/resources/audio/jazz1/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/jazz1/MP3/jazz1_mp3_256kbps.wav" }
+    - type: mushra
+      id: "jazz1_10"
+      name: "Jazz 1 - Test_02"
+      reference: "configs/resources/audio/jazz1/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/jazz1/Opus/jazz1_opus_64kbps.wav" }
+    - type: mushra
+      id: "jazz1_11"
+      name: "Jazz 1 - Test_13"
+      reference: "configs/resources/audio/jazz1/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/jazz1/Opus/jazz1_opus_96kbps.wav" }
+    - type: mushra
+      id: "jazz1_12"
+      name: "Jazz 1 - Test_07"
+      reference: "configs/resources/audio/jazz1/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/jazz1/Opus/jazz1_opus_128kbps.wav" }
+    - type: mushra
+      id: "jazz1_13"
+      name: "Jazz 1 - Test_05"
+      reference: "configs/resources/audio/jazz1/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/jazz1/Opus/jazz1_opus_192kbps.wav" }
+    - type: mushra
+      id: "jazz1_14"
+      name: "Jazz 1 - Test_11"
+      reference: "configs/resources/audio/jazz1/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/jazz1/Opus/jazz1_opus_256kbps.wav" }
+
+  # --- JAZZ 2 (MUSHRA) ---
+  - 
+    - "random"
+    - type: mushra
+      id: "jazz2_01"
+      name: "Jazz 2 - Test_09"
+      reference: "configs/resources/audio/jazz2/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/jazz2/AAC/jazz2_aac_96kbps.wav" }
+    - type: mushra
+      id: "jazz2_02"
+      name: "Jazz 2 - Test_13"
+      reference: "configs/resources/audio/jazz2/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/jazz2/AAC/jazz2_aac_128kbps.wav" }
+    - type: mushra
+      id: "jazz2_03"
+      name: "Jazz 2 - Test_02"
+      reference: "configs/resources/audio/jazz2/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/jazz2/AAC/jazz2_aac_192kbps.wav" }
+    - type: mushra
+      id: "jazz2_04"
+      name: "Jazz 2 - Test_06"
+      reference: "configs/resources/audio/jazz2/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/jazz2/AAC/jazz2_aac_256kbps.wav" }
+    - type: mushra
+      id: "jazz2_05"
+      name: "Jazz 2 - Test_01"
+      reference: "configs/resources/audio/jazz2/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/jazz2/MP3/jazz2_mp3_64kbps.wav" }
+    - type: mushra
+      id: "jazz2_06"
+      name: "Jazz 2 - Test_10"
+      reference: "configs/resources/audio/jazz2/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/jazz2/MP3/jazz2_mp3_96kbps.wav" }
+    - type: mushra
+      id: "jazz2_07"
+      name: "Jazz 2 - Test_14"
+      reference: "configs/resources/audio/jazz2/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/jazz2/MP3/jazz2_mp3_128kbps.wav" }
+    - type: mushra
+      id: "jazz2_08"
+      name: "Jazz 2 - Test_04"
+      reference: "configs/resources/audio/jazz2/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/jazz2/MP3/jazz2_mp3_192kbps.wav" }
+    - type: mushra
+      id: "jazz2_09"
+      name: "Jazz 2 - Test_08"
+      reference: "configs/resources/audio/jazz2/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/jazz2/MP3/jazz2_mp3_256kbps.wav" }
+    - type: mushra
+      id: "jazz2_10"
+      name: "Jazz 2 - Test_05"
+      reference: "configs/resources/audio/jazz2/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/jazz2/Opus/jazz2_opus_64kbps.wav" }
+    - type: mushra
+      id: "jazz2_11"
+      name: "Jazz 2 - Test_12"
+      reference: "configs/resources/audio/jazz2/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/jazz2/Opus/jazz2_opus_96kbps.wav" }
+    - type: mushra
+      id: "jazz2_12"
+      name: "Jazz 2 - Test_03"
+      reference: "configs/resources/audio/jazz2/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/jazz2/Opus/jazz2_opus_128kbps.wav" }
+    - type: mushra
+      id: "jazz2_13"
+      name: "Jazz 2 - Test_07"
+      reference: "configs/resources/audio/jazz2/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/jazz2/Opus/jazz2_opus_192kbps.wav" }
+    - type: mushra
+      id: "jazz2_14"
+      name: "Jazz 2 - Test_11"
+      reference: "configs/resources/audio/jazz2/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/jazz2/Opus/jazz2_opus_256kbps.wav" }
+
+  # --- MOWA K (MUSHRA) ---
+  - 
+    - "random"
+    - type: mushra
+      id: "mowa_k_01"
+      name: "Mowa K - Test_11"
+      reference: "configs/resources/audio/mowa_k/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/mowa_k/AAC/mowa_k_aac_96kbps.wav" }
+    - type: mushra
+      id: "mowa_k_02"
+      name: "Mowa K - Test_05"
+      reference: "configs/resources/audio/mowa_k/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/mowa_k/AAC/mowa_k_aac_128kbps.wav" }
+    - type: mushra
+      id: "mowa_k_03"
+      name: "Mowa K - Test_03"
+      reference: "configs/resources/audio/mowa_k/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/mowa_k/AAC/mowa_k_aac_192kbps.wav" }
+    - type: mushra
+      id: "mowa_k_04"
+      name: "Mowa K - Test_14"
+      reference: "configs/resources/audio/mowa_k/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/mowa_k/AAC/mowa_k_aac_256kbps.wav" }
+    - type: mushra
+      id: "mowa_k_05"
+      name: "Mowa K - Test_01"
+      reference: "configs/resources/audio/mowa_k/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/mowa_k/MP3/mowa_k_mp3_64kbps.wav" }
+    - type: mushra
+      id: "mowa_k_06"
+      name: "Mowa K - Test_07"
+      reference: "configs/resources/audio/mowa_k/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/mowa_k/MP3/mowa_k_mp3_96kbps.wav" }
+    - type: mushra
+      id: "mowa_k_07"
+      name: "Mowa K - Test_10"
+      reference: "configs/resources/audio/mowa_k/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/mowa_k/MP3/mowa_k_mp3_128kbps.wav" }
+    - type: mushra
+      id: "mowa_k_08"
+      name: "Mowa K - Test_04"
+      reference: "configs/resources/audio/mowa_k/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/mowa_k/MP3/mowa_k_mp3_192kbps.wav" }
+    - type: mushra
+      id: "mowa_k_09"
+      name: "Mowa K - Test_13"
+      reference: "configs/resources/audio/mowa_k/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/mowa_k/MP3/mowa_k_mp3_256kbps.wav" }
+    - type: mushra
+      id: "mowa_k_10"
+      name: "Mowa K - Test_02"
+      reference: "configs/resources/audio/mowa_k/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/mowa_k/Opus/mowa_k_opus_64kbps.wav" }
+    - type: mushra
+      id: "mowa_k_11"
+      name: "Mowa K - Test_09"
+      reference: "configs/resources/audio/mowa_k/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/mowa_k/Opus/mowa_k_opus_96kbps.wav" }
+    - type: mushra
+      id: "mowa_k_12"
+      name: "Mowa K - Test_06"
+      reference: "configs/resources/audio/mowa_k/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/mowa_k/Opus/mowa_k_opus_128kbps.wav" }
+    - type: mushra
+      id: "mowa_k_13"
+      name: "Mowa K - Test_12"
+      reference: "configs/resources/audio/mowa_k/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/mowa_k/Opus/mowa_k_opus_192kbps.wav" }
+    - type: mushra
+      id: "mowa_k_14"
+      name: "Mowa K - Test_08"
+      reference: "configs/resources/audio/mowa_k/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/mowa_k/Opus/mowa_k_opus_256kbps.wav" }
+
+  # --- MOWA M1 (MUSHRA) ---
+  - 
+    - "random"
+    - type: mushra
+      id: "mowa_m1_01"
+      name: "Mowa M1 - Test_06"
+      reference: "configs/resources/audio/mowa_m1/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/mowa_m1/AAC/mowa_m1_aac_96kbps.wav" }
+    - type: mushra
+      id: "mowa_m1_02"
+      name: "Mowa M1 - Test_14"
+      reference: "configs/resources/audio/mowa_m1/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/mowa_m1/AAC/mowa_m1_aac_128kbps.wav" }
+    - type: mushra
+      id: "mowa_m1_03"
+      name: "Mowa M1 - Test_02"
+      reference: "configs/resources/audio/mowa_m1/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/mowa_m1/AAC/mowa_m1_aac_192kbps.wav" }
+    - type: mushra
+      id: "mowa_m1_04"
+      name: "Mowa M1 - Test_09"
+      reference: "configs/resources/audio/mowa_m1/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/mowa_m1/AAC/mowa_m1_aac_256kbps.wav" }
+    - type: mushra
+      id: "mowa_m1_05"
+      name: "Mowa M1 - Test_05"
+      reference: "configs/resources/audio/mowa_m1/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/mowa_m1/MP3/mowa_m1_mp3_64kbps.wav" }
+    - type: mushra
+      id: "mowa_m1_06"
+      name: "Mowa M1 - Test_11"
+      reference: "configs/resources/audio/mowa_m1/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/mowa_m1/MP3/mowa_m1_mp3_96kbps.wav" }
+    - type: mushra
+      id: "mowa_m1_07"
+      name: "Mowa M1 - Test_01"
+      reference: "configs/resources/audio/mowa_m1/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/mowa_m1/MP3/mowa_m1_mp3_128kbps.wav" }
+    - type: mushra
+      id: "mowa_m1_08"
+      name: "Mowa M1 - Test_08"
+      reference: "configs/resources/audio/mowa_m1/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/mowa_m1/MP3/mowa_m1_mp3_192kbps.wav" }
+    - type: mushra
+      id: "mowa_m1_09"
+      name: "Mowa M1 - Test_13"
+      reference: "configs/resources/audio/mowa_m1/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/mowa_m1/MP3/mowa_m1_mp3_256kbps.wav" }
+    - type: mushra
+      id: "mowa_m1_10"
+      name: "Mowa M1 - Test_03"
+      reference: "configs/resources/audio/mowa_m1/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/mowa_m1/Opus/mowa_m1_opus_64kbps.wav" }
+    - type: mushra
+      id: "mowa_m1_11"
+      name: "Mowa M1 - Test_12"
+      reference: "configs/resources/audio/mowa_m1/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/mowa_m1/Opus/mowa_m1_opus_96kbps.wav" }
+    - type: mushra
+      id: "mowa_m1_12"
+      name: "Mowa M1 - Test_06"
+      reference: "configs/resources/audio/mowa_m1/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/mowa_m1/Opus/mowa_m1_opus_128kbps.wav" }
+    - type: mushra
+      id: "mowa_m1_13"
+      name: "Mowa M1 - Test_10"
+      reference: "configs/resources/audio/mowa_m1/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/mowa_m1/Opus/mowa_m1_opus_192kbps.wav" }
+    - type: mushra
+      id: "mowa_m1_14"
+      name: "Mowa M1 - Test_04"
+      reference: "configs/resources/audio/mowa_m1/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/mowa_m1/Opus/mowa_m1_opus_256kbps.wav" }
+
+  # --- MOWA M2 (MUSHRA) ---
+  - 
+    - "random"
+    - type: mushra
+      id: "mowa_m2_01"
+      name: "Mowa M2 - Test_04"
+      reference: "configs/resources/audio/mowa_m2/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/mowa_m2/AAC/mowa_m2_aac_96kbps.wav" }
+    - type: mushra
+      id: "mowa_m2_02"
+      name: "Mowa M2 - Test_11"
+      reference: "configs/resources/audio/mowa_m2/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/mowa_m2/AAC/mowa_m2_aac_128kbps.wav" }
+    - type: mushra
+      id: "mowa_m2_03"
+      name: "Mowa M2 - Test_02"
+      reference: "configs/resources/audio/mowa_m2/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/mowa_m2/AAC/mowa_m2_aac_192kbps.wav" }
+    - type: mushra
+      id: "mowa_m2_04"
+      name: "Mowa M2 - Test_09"
+      reference: "configs/resources/audio/mowa_m2/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/mowa_m2/AAC/mowa_m2_aac_256kbps.wav" }
+    - type: mushra
+      id: "mowa_m2_05"
+      name: "Mowa M2 - Test_07"
+      reference: "configs/resources/audio/mowa_m2/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/mowa_m2/MP3/mowa_m2_mp3_64kbps.wav" }
+    - type: mushra
+      id: "mowa_m2_06"
+      name: "Mowa M2 - Test_13"
+      reference: "configs/resources/audio/mowa_m2/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/mowa_m2/MP3/mowa_m2_mp3_96kbps.wav" }
+    - type: mushra
+      id: "mowa_m2_07"
+      name: "Mowa M2 - Test_05"
+      reference: "configs/resources/audio/mowa_m2/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/mowa_m2/MP3/mowa_m2_mp3_128kbps.wav" }
+    - type: mushra
+      id: "mowa_m2_08"
+      name: "Mowa M2 - Test_01"
+      reference: "configs/resources/audio/mowa_m2/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/mowa_m2/MP3/mowa_m2_mp3_192kbps.wav" }
+    - type: mushra
+      id: "mowa_m2_09"
+      name: "Mowa M2 - Test_14"
+      reference: "configs/resources/audio/mowa_m2/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/mowa_m2/MP3/mowa_m2_mp3_256kbps.wav" }
+    - type: mushra
+      id: "mowa_m2_10"
+      name: "Mowa M2 - Test_08"
+      reference: "configs/resources/audio/mowa_m2/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/mowa_m2/Opus/mowa_m2_opus_64kbps.wav" }
+    - type: mushra
+      id: "mowa_m2_11"
+      name: "Mowa M2 - Test_03"
+      reference: "configs/resources/audio/mowa_m2/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/mowa_m2/Opus/mowa_m2_opus_96kbps.wav" }
+    - type: mushra
+      id: "mowa_m2_12"
+      name: "Mowa M2 - Test_10"
+      reference: "configs/resources/audio/mowa_m2/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/mowa_m2/Opus/mowa_m2_opus_128kbps.wav" }
+    - type: mushra
+      id: "mowa_m2_13"
+      name: "Mowa M2 - Test_06"
+      reference: "configs/resources/audio/mowa_m2/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/mowa_m2/Opus/mowa_m2_opus_192kbps.wav" }
+    - type: mushra
+      id: "mowa_m2_14"
+      name: "Mowa M2 - Test_12"
+      reference: "configs/resources/audio/mowa_m2/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/mowa_m2/Opus/mowa_m2_opus_256kbps.wav" }
+
+  # --- POP ---
+  - 
+    - "random"
+    - type: mushra
+      id: "pop_01"
+      name: "Pop - Test_13"
+      reference: "configs/resources/audio/pop/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/pop/AAC/pop_aac_96kbps.wav" }
+    - type: mushra
+      id: "pop_02"
+      name: "Pop - Test_01"
+      reference: "configs/resources/audio/pop/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/pop/AAC/pop_aac_128kbps.wav" }
+    - type: mushra
+      id: "pop_03"
+      name: "Pop - Test_05"
+      reference: "configs/resources/audio/pop/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/pop/AAC/pop_aac_192kbps.wav" }
+    - type: mushra
+      id: "pop_04"
+      name: "Pop - Test_09"
+      reference: "configs/resources/audio/pop/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/pop/AAC/pop_aac_256kbps.wav" }
+    - type: mushra
+      id: "pop_05"
+      name: "Pop - Test_04"
+      reference: "configs/resources/audio/pop/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/pop/MP3/pop_mp3_64kbps.wav" }
+    - type: mushra
+      id: "pop_06"
+      name: "Pop - Test_14"
+      reference: "configs/resources/audio/pop/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/pop/MP3/pop_mp3_96kbps.wav" }
+    - type: mushra
+      id: "pop_07"
+      name: "Pop - Test_02"
+      reference: "configs/resources/audio/pop/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/pop/MP3/pop_mp3_128kbps.wav" }
+    - type: mushra
+      id: "pop_08"
+      name: "Pop - Test_10"
+      reference: "configs/resources/audio/pop/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/pop/MP3/pop_mp3_192kbps.wav" }
+    - type: mushra
+      id: "pop_09"
+      name: "Pop - Test_06"
+      reference: "configs/resources/audio/pop/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/pop/MP3/pop_mp3_256kbps.wav" }
+    - type: mushra
+      id: "pop_10"
+      name: "Pop - Test_12"
+      reference: "configs/resources/audio/pop/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/pop/Opus/pop_opus_64kbps.wav" }
+    - type: mushra
+      id: "pop_11"
+      name: "Pop - Test_08"
+      reference: "configs/resources/audio/pop/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/pop/Opus/pop_opus_96kbps.wav" }
+    - type: mushra
+      id: "pop_12"
+      name: "Pop - Test_03"
+      reference: "configs/resources/audio/pop/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/pop/Opus/pop_opus_128kbps.wav" }
+    - type: mushra
+      id: "pop_13"
+      name: "Pop - Test_07"
+      reference: "configs/resources/audio/pop/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/pop/Opus/pop_opus_192kbps.wav" }
+    - type: mushra
+      id: "pop_14"
+      name: "Pop - Test_11"
+      reference: "configs/resources/audio/pop/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/pop/Opus/pop_opus_256kbps.wav" }
+
+  # --- ROCK 1 ---
+  - 
+    - "random"
+    - type: mushra
+      id: "rock1_01"
+      name: "Rock 1 - Test_05"
+      reference: "configs/resources/audio/rock1/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/rock1/AAC/rock1_aac_96kbps.wav" }
+    - type: mushra
+      id: "rock1_02"
+      name: "Rock 1 - Test_13"
+      reference: "configs/resources/audio/rock1/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/rock1/AAC/rock1_aac_128kbps.wav" }
+    - type: mushra
+      id: "rock1_03"
+      name: "Rock 1 - Test_09"
+      reference: "configs/resources/audio/rock1/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/rock1/AAC/rock1_aac_192kbps.wav" }
+    - type: mushra
+      id: "rock1_04"
+      name: "Rock 1 - Test_01"
+      reference: "configs/resources/audio/rock1/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/rock1/AAC/rock1_aac_256kbps.wav" }
+    - type: mushra
+      id: "rock1_05"
+      name: "Rock 1 - Test_07"
+      reference: "configs/resources/audio/rock1/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/rock1/MP3/rock1_mp3_64kbps.wav" }
+    - type: mushra
+      id: "rock1_06"
+      name: "Rock 1 - Test_03"
+      reference: "configs/resources/audio/rock1/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/rock1/MP3/rock1_mp3_96kbps.wav" }
+    - type: mushra
+      id: "rock1_07"
+      name: "Rock 1 - Test_11"
+      reference: "configs/resources/audio/rock1/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/rock1/MP3/rock1_mp3_128kbps.wav" }
+    - type: mushra
+      id: "rock1_08"
+      name: "Rock 1 - Test_14"
+      reference: "configs/resources/audio/rock1/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/rock1/MP3/rock1_mp3_192kbps.wav" }
+    - type: mushra
+      id: "rock1_09"
+      name: "Rock 1 - Test_06"
+      reference: "configs/resources/audio/rock1/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/rock1/MP3/rock1_mp3_256kbps.wav" }
+    - type: mushra
+      id: "rock1_10"
+      name: "Rock 1 - Test_10"
+      reference: "configs/resources/audio/rock1/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/rock1/Opus/rock1_opus_64kbps.wav" }
+    - type: mushra
+      id: "rock1_11"
+      name: "Rock 1 - Test_02"
+      reference: "configs/resources/audio/rock1/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/rock1/Opus/rock1_opus_96kbps.wav" }
+    - type: mushra
+      id: "rock1_12"
+      name: "Rock 1 - Test_08"
+      reference: "configs/resources/audio/rock1/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/rock1/Opus/rock1_opus_128kbps.wav" }
+    - type: mushra
+      id: "rock1_13"
+      name: "Rock 1 - Test_12"
+      reference: "configs/resources/audio/rock1/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/rock1/Opus/rock1_opus_192kbps.wav" }
+    - type: mushra
+      id: "rock1_14"
+      name: "Rock 1 - Test_04"
+      reference: "configs/resources/audio/rock1/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/rock1/Opus/rock1_opus_256kbps.wav" }
+
+  # --- ROCK 2 ---
+  - 
+    - "random"
+    - type: mushra
+      id: "rock2_01"
+      name: "Rock 2 - Test_02"
+      reference: "configs/resources/audio/rock2/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/rock2/AAC/rock2_aac_96kbps.wav" }
+    - type: mushra
+      id: "rock2_02"
+      name: "Rock 2 - Test_14"
+      reference: "configs/resources/audio/rock2/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/rock2/AAC/rock2_aac_128kbps.wav" }
+    - type: mushra
+      id: "rock2_03"
+      name: "Rock 2 - Test_08"
+      reference: "configs/resources/audio/rock2/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/rock2/AAC/rock2_aac_192kbps.wav" }
+    - type: mushra
+      id: "rock2_04"
+      name: "Rock 2 - Test_12"
+      reference: "configs/resources/audio/rock2/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/rock2/AAC/rock2_aac_256kbps.wav" }
+    - type: mushra
+      id: "rock2_05"
+      name: "Rock 2 - Test_01"
+      reference: "configs/resources/audio/rock2/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/rock2/MP3/rock2_mp3_64kbps.wav" }
+    - type: mushra
+      id: "rock2_06"
+      name: "Rock 2 - Test_05"
+      reference: "configs/resources/audio/rock2/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/rock2/MP3/rock2_mp3_96kbps.wav" }
+    - type: mushra
+      id: "rock2_07"
+      name: "Rock 2 - Test_10"
+      reference: "configs/resources/audio/rock2/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/rock2/MP3/rock2_mp3_128kbps.wav" }
+    - type: mushra
+      id: "rock2_08"
+      name: "Rock 2 - Test_13"
+      reference: "configs/resources/audio/rock2/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/rock2/MP3/rock2_mp3_192kbps.wav" }
+    - type: mushra
+      id: "rock2_09"
+      name: "Rock 2 - Test_02"
+      reference: "configs/resources/audio/rock2/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/rock2/MP3/rock2_mp3_256kbps.wav" }
+    - type: mushra
+      id: "rock2_10"
+      name: "Rock 2 - Test_06"
+      reference: "configs/resources/audio/rock2/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/rock2/Opus/rock2_opus_64kbps.wav" }
+    - type: mushra
+      id: "rock2_11"
+      name: "Rock 2 - Test_09"
+      reference: "configs/resources/audio/rock2/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/rock2/Opus/rock2_opus_96kbps.wav" }
+    - type: mushra
+      id: "rock2_12"
+      name: "Rock 2 - Test_04"
+      reference: "configs/resources/audio/rock2/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/rock2/Opus/rock2_opus_128kbps.wav" }
+    - type: mushra
+      id: "rock2_13"
+      name: "Rock 2 - Test_11"
+      reference: "configs/resources/audio/rock2/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/rock2/Opus/rock2_opus_192kbps.wav" }
+    - type: mushra
+      id: "rock2_14"
+      name: "Rock 2 - Test_07"
+      reference: "configs/resources/audio/rock2/Ref.wav"
+      includeReference: false
+      createAnchor35: false
+      createAnchor70: false
+      stimuli: { A: "configs/resources/audio/rock2/Opus/rock2_opus_256kbps.wav" }
+
+  # ==========================================================
+  # SEKCJA 2 (ACR / SINGLE STIMULUS) - PODZIAŁ NA GATUNKI
+  # ==========================================================
+  
+  # --- PRZERWA ---
+  - type: generic
+    id: "break_time"
+    name: "Przerwa"
+    content: |
+      <div style="text-align: center; margin-top: 20px;">
+        <h3>Koniec Części 1</h3>
+        <p>Dziękuję za ukończenie pierwszej części badania.</p>
+        <p>Przed przystąpieniem do drugiej części, proszę zrób sobie <b>5 minut przerwy</b>.</p>
+        <p>Gdy będziesz gotowy/a, kliknij "Dalej".</p>
+      </div>
+
+  # --- INSTRUKCJA ---
+  - type: generic
+    id: "intro_acr"
+    name: "Instrukcja ACR"
+    content: |
+      <h3>Część 2: Ocena Pojedyncza</h3>
+      <p>W tej części oceniasz jakość słyszanego nagrania na skali 1-5 (gdzie 5 to najlepsza).</p>
+
+  # --- CLASSICS (ACR) ---
+  - type: generic
+    id: "intro_acr_classics"
+    name: "Kategoria: Classics"
+    content: "<h3>Kategoria: Classics</h3><p>Kliknij Dalej, aby rozpocząć.</p>"
+  - 
+    - "random"
+    - type: likert_multi_stimulus
+      id: "acr_classics_aac_96"
+      name: "Classics - Próbka 04"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/classics/AAC/classics_aac_96kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_classics_aac_128"
+      name: "Classics - Próbka 11"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/classics/AAC/classics_aac_128kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_classics_aac_192"
+      name: "Classics - Próbka 02"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/classics/AAC/classics_aac_192kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_classics_aac_256"
+      name: "Classics - Próbka 09"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/classics/AAC/classics_aac_256kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_classics_mp3_64"
+      name: "Classics - Próbka 14"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/classics/MP3/classics_mp3_64kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_classics_mp3_96"
+      name: "Classics - Próbka 07"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/classics/MP3/classics_mp3_96kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_classics_mp3_128"
+      name: "Classics - Próbka 01"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/classics/MP3/classics_mp3_128kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_classics_mp3_192"
+      name: "Classics - Próbka 10"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/classics/MP3/classics_mp3_192kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_classics_mp3_256"
+      name: "Classics - Próbka 05"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/classics/MP3/classics_mp3_256kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_classics_opus_64"
+      name: "Classics - Próbka 13"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/classics/Opus/classics_opus_64kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_classics_opus_96"
+      name: "Classics - Próbka 08"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/classics/Opus/classics_opus_96kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_classics_opus_128"
+      name: "Classics - Próbka 03"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/classics/Opus/classics_opus_128kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_classics_opus_192"
+      name: "Classics - Próbka 12"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/classics/Opus/classics_opus_192kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_classics_opus_256"
+      name: "Classics - Próbka 06"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/classics/Opus/classics_opus_256kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+
+  # --- FOLK (ACR) ---
+  - type: generic
+    id: "intro_acr_folk"
+    name: "Kategoria: Folk"
+    content: "<h3>Kategoria: Folk</h3><p>Kliknij Dalej, aby rozpocząć.</p>"
+  - 
+    - "random"
+    - type: likert_multi_stimulus
+      id: "acr_folk_aac_96"
+      name: "Folk - Próbka 09"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/folk/AAC/folk_aac_96kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_folk_aac_128"
+      name: "Folk - Próbka 02"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/folk/AAC/folk_aac_128kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_folk_aac_192"
+      name: "Folk - Próbka 14"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/folk/AAC/folk_aac_192kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_folk_aac_256"
+      name: "Folk - Próbka 05"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/folk/AAC/folk_aac_256kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_folk_mp3_64"
+      name: "Folk - Próbka 01"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/folk/MP3/folk_mp3_64kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_folk_mp3_96"
+      name: "Folk - Próbka 11"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/folk/MP3/folk_mp3_96kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_folk_mp3_128"
+      name: "Folk - Próbka 07"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/folk/MP3/folk_mp3_128kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_folk_mp3_192"
+      name: "Folk - Próbka 06"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/folk/MP3/folk_mp3_192kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_folk_mp3_256"
+      name: "Folk - Próbka 03"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/folk/MP3/folk_mp3_256kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_folk_opus_64"
+      name: "Folk - Próbka 13"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/folk/Opus/folk_opus_64kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_folk_opus_96"
+      name: "Folk - Próbka 08"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/folk/Opus/folk_opus_96kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_folk_opus_128"
+      name: "Folk - Próbka 04"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/folk/Opus/folk_opus_128kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_folk_opus_192"
+      name: "Folk - Próbka 10"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/folk/Opus/folk_opus_192kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_folk_opus_256"
+      name: "Folk - Próbka 12"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/folk/Opus/folk_opus_256kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+
+  # --- JAZZ 1 (ACR) ---
+  - type: generic
+    id: "intro_acr_jazz1"
+    name: "Kategoria: Jazz 1"
+    content: "<h3>Kategoria: Jazz 1</h3><p>Kliknij Dalej, aby rozpocząć.</p>"
+  - 
+    - "random"
+    - type: likert_multi_stimulus
+      id: "acr_jazz1_aac_96"
+      name: "Jazz 1 - Próbka 03"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/jazz1/AAC/jazz1_aac_96kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_jazz1_aac_128"
+      name: "Jazz 1 - Próbka 10"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/jazz1/AAC/jazz1_aac_128kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_jazz1_aac_192"
+      name: "Jazz 1 - Próbka 14"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/jazz1/AAC/jazz1_aac_192kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_jazz1_aac_256"
+      name: "Jazz 1 - Próbka 01"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/jazz1/AAC/jazz1_aac_256kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_jazz1_mp3_64"
+      name: "Jazz 1 - Próbka 12"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/jazz1/MP3/jazz1_mp3_64kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_jazz1_mp3_96"
+      name: "Jazz 1 - Próbka 08"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/jazz1/MP3/jazz1_mp3_96kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_jazz1_mp3_128"
+      name: "Jazz 1 - Próbka 04"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/jazz1/MP3/jazz1_mp3_128kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_jazz1_mp3_192"
+      name: "Jazz 1 - Próbka 09"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/jazz1/MP3/jazz1_mp3_192kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_jazz1_mp3_256"
+      name: "Jazz 1 - Próbka 06"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/jazz1/MP3/jazz1_mp3_256kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_jazz1_opus_64"
+      name: "Jazz 1 - Próbka 02"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/jazz1/Opus/jazz1_opus_64kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_jazz1_opus_96"
+      name: "Jazz 1 - Próbka 13"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/jazz1/Opus/jazz1_opus_96kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_jazz1_opus_128"
+      name: "Jazz 1 - Próbka 07"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/jazz1/Opus/jazz1_opus_128kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_jazz1_opus_192"
+      name: "Jazz 1 - Próbka 05"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/jazz1/Opus/jazz1_opus_192kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_jazz1_opus_256"
+      name: "Jazz 1 - Próbka 11"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/jazz1/Opus/jazz1_opus_256kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+
+  # --- JAZZ 2 (ACR) ---
+  - type: generic
+    id: "intro_acr_jazz2"
+    name: "Kategoria: Jazz 2"
+    content: "<h3>Kategoria: Jazz 2</h3><p>Kliknij Dalej, aby rozpocząć.</p>"
+  - 
+    - "random"
+    - type: likert_multi_stimulus
+      id: "acr_jazz2_aac_96"
+      name: "Jazz 2 - Próbka 08"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/jazz2/AAC/jazz2_aac_96kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_jazz2_aac_128"
+      name: "Jazz 2 - Próbka 13"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/jazz2/AAC/jazz2_aac_128kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_jazz2_aac_192"
+      name: "Jazz 2 - Próbka 02"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/jazz2/AAC/jazz2_aac_192kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_jazz2_aac_256"
+      name: "Jazz 2 - Próbka 07"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/jazz2/AAC/jazz2_aac_256kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_jazz2_mp3_64"
+      name: "Jazz 2 - Próbka 01"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/jazz2/MP3/jazz2_mp3_64kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_jazz2_mp3_96"
+      name: "Jazz 2 - Próbka 10"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/jazz2/MP3/jazz2_mp3_96kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_jazz2_mp3_128"
+      name: "Jazz 2 - Próbka 14"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/jazz2/MP3/jazz2_mp3_128kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_jazz2_mp3_192"
+      name: "Jazz 2 - Próbka 04"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/jazz2/MP3/jazz2_mp3_192kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_jazz2_mp3_256"
+      name: "Jazz 2 - Próbka 09"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/jazz2/MP3/jazz2_mp3_256kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_jazz2_opus_64"
+      name: "Jazz 2 - Próbka 05"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/jazz2/Opus/jazz2_opus_64kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_jazz2_opus_96"
+      name: "Jazz 2 - Próbka 12"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/jazz2/Opus/jazz2_opus_96kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_jazz2_opus_128"
+      name: "Jazz 2 - Próbka 03"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/jazz2/Opus/jazz2_opus_128kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_jazz2_opus_192"
+      name: "Jazz 2 - Próbka 06"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/jazz2/Opus/jazz2_opus_192kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_jazz2_opus_256"
+      name: "Jazz 2 - Próbka 11"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/jazz2/Opus/jazz2_opus_256kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+
+  # --- MOWA K (ACR) ---
+  - type: generic
+    id: "intro_acr_mowa_k"
+    name: "Kategoria: Mowa K"
+    content: "<h3>Kategoria: Mowa K</h3><p>Kliknij Dalej, aby rozpocząć.</p>"
+  - 
+    - "random"
+    - type: likert_multi_stimulus
+      id: "acr_mowa_k_aac_96"
+      name: "Mowa K - Próbka 11"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/mowa_k/AAC/mowa_k_aac_96kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_mowa_k_aac_128"
+      name: "Mowa K - Próbka 05"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/mowa_k/AAC/mowa_k_aac_128kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_mowa_k_aac_192"
+      name: "Mowa K - Próbka 03"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/mowa_k/AAC/mowa_k_aac_192kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_mowa_k_aac_256"
+      name: "Mowa K - Próbka 14"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/mowa_k/AAC/mowa_k_aac_256kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_mowa_k_mp3_64"
+      name: "Mowa K - Próbka 01"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/mowa_k/MP3/mowa_k_mp3_64kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_mowa_k_mp3_96"
+      name: "Mowa K - Próbka 07"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/mowa_k/MP3/mowa_k_mp3_96kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_mowa_k_mp3_128"
+      name: "Mowa K - Próbka 10"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/mowa_k/MP3/mowa_k_mp3_128kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_mowa_k_mp3_192"
+      name: "Mowa K - Próbka 04"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/mowa_k/MP3/mowa_k_mp3_192kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_mowa_k_mp3_256"
+      name: "Mowa K - Próbka 13"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/mowa_k/MP3/mowa_k_mp3_256kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_mowa_k_opus_64"
+      name: "Mowa K - Próbka 02"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/mowa_k/Opus/mowa_k_opus_64kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_mowa_k_opus_96"
+      name: "Mowa K - Próbka 09"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/mowa_k/Opus/mowa_k_opus_96kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_mowa_k_opus_128"
+      name: "Mowa K - Próbka 06"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/mowa_k/Opus/mowa_k_opus_128kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_mowa_k_opus_192"
+      name: "Mowa K - Próbka 12"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/mowa_k/Opus/mowa_k_opus_192kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_mowa_k_opus_256"
+      name: "Mowa K - Próbka 08"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/mowa_k/Opus/mowa_k_opus_256kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+
+  # --- MOWA M1 (ACR) ---
+  - type: generic
+    id: "intro_acr_mowa_m1"
+    name: "Kategoria: Mowa M1"
+    content: "<h3>Kategoria: Mowa M1</h3><p>Kliknij Dalej, aby rozpocząć.</p>"
+  - 
+    - "random"
+    - type: likert_multi_stimulus
+      id: "acr_mowa_m1_aac_96"
+      name: "Mowa M1 - Próbka 06"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/mowa_m1/AAC/mowa_m1_aac_96kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_mowa_m1_aac_128"
+      name: "Mowa M1 - Próbka 14"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/mowa_m1/AAC/mowa_m1_aac_128kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_mowa_m1_aac_192"
+      name: "Mowa M1 - Próbka 02"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/mowa_m1/AAC/mowa_m1_aac_192kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_mowa_m1_aac_256"
+      name: "Mowa M1 - Próbka 09"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/mowa_m1/AAC/mowa_m1_aac_256kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_mowa_m1_mp3_64"
+      name: "Mowa M1 - Próbka 05"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/mowa_m1/MP3/mowa_m1_mp3_64kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_mowa_m1_mp3_96"
+      name: "Mowa M1 - Próbka 11"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/mowa_m1/MP3/mowa_m1_mp3_96kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_mowa_m1_mp3_128"
+      name: "Mowa M1 - Próbka 01"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/mowa_m1/MP3/mowa_m1_mp3_128kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_mowa_m1_mp3_192"
+      name: "Mowa M1 - Próbka 08"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/mowa_m1/MP3/mowa_m1_mp3_192kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_mowa_m1_mp3_256"
+      name: "Mowa M1 - Próbka 13"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/mowa_m1/MP3/mowa_m1_mp3_256kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_mowa_m1_opus_64"
+      name: "Mowa M1 - Próbka 03"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/mowa_m1/Opus/mowa_m1_opus_64kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_mowa_m1_opus_96"
+      name: "Mowa M1 - Próbka 12"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/mowa_m1/Opus/mowa_m1_opus_96kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_mowa_m1_opus_128"
+      name: "Mowa M1 - Próbka 07"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/mowa_m1/Opus/mowa_m1_opus_128kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_mowa_m1_opus_192"
+      name: "Mowa M1 - Próbka 10"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/mowa_m1/Opus/mowa_m1_opus_192kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_mowa_m1_opus_256"
+      name: "Mowa M1 - Próbka 04"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/mowa_m1/Opus/mowa_m1_opus_256kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+
+  # --- MOWA M2 (ACR) ---
+  - type: generic
+    id: "intro_acr_mowa_m2"
+    name: "Kategoria: Mowa M2"
+    content: "<h3>Kategoria: Mowa M2</h3><p>Kliknij Dalej, aby rozpocząć.</p>"
+  - 
+    - "random"
+    - type: likert_multi_stimulus
+      id: "acr_mowa_m2_aac_96"
+      name: "Mowa M2 - Próbka 05"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/mowa_m2/AAC/mowa_m2_aac_96kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_mowa_m2_aac_128"
+      name: "Mowa M2 - Próbka 11"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/mowa_m2/AAC/mowa_m2_aac_128kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_mowa_m2_aac_192"
+      name: "Mowa M2 - Próbka 02"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/mowa_m2/AAC/mowa_m2_aac_192kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_mowa_m2_aac_256"
+      name: "Mowa M2 - Próbka 09"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/mowa_m2/AAC/mowa_m2_aac_256kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_mowa_m2_mp3_64"
+      name: "Mowa M2 - Próbka 07"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/mowa_m2/MP3/mowa_m2_mp3_64kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_mowa_m2_mp3_96"
+      name: "Mowa M2 - Próbka 13"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/mowa_m2/MP3/mowa_m2_mp3_96kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_mowa_m2_mp3_128"
+      name: "Mowa M2 - Próbka 06"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/mowa_m2/MP3/mowa_m2_mp3_128kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_mowa_m2_mp3_192"
+      name: "Mowa M2 - Próbka 01"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/mowa_m2/MP3/mowa_m2_mp3_192kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_mowa_m2_mp3_256"
+      name: "Mowa M2 - Próbka 14"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/mowa_m2/MP3/mowa_m2_mp3_256kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_mowa_m2_opus_64"
+      name: "Mowa M2 - Próbka 08"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/mowa_m2/Opus/mowa_m2_opus_64kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_mowa_m2_opus_96"
+      name: "Mowa M2 - Próbka 03"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/mowa_m2/Opus/mowa_m2_opus_96kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_mowa_m2_opus_128"
+      name: "Mowa M2 - Próbka 10"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/mowa_m2/Opus/mowa_m2_opus_128kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_mowa_m2_opus_192"
+      name: "Mowa M2 - Próbka 04"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/mowa_m2/Opus/mowa_m2_opus_192kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_mowa_m2_opus_256"
+      name: "Mowa M2 - Próbka 12"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/mowa_m2/Opus/mowa_m2_opus_256kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+
+  # --- POP (ACR) ---
+  - type: generic
+    id: "intro_acr_pop"
+    name: "Kategoria: Pop"
+    content: "<h3>Kategoria: Pop</h3><p>Kliknij Dalej, aby rozpocząć.</p>"
+  - 
+    - "random"
+    - type: likert_multi_stimulus
+      id: "acr_pop_aac_96"
+      name: "Pop - Próbka 13"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/pop/AAC/pop_aac_96kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_pop_aac_128"
+      name: "Pop - Próbka 01"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/pop/AAC/pop_aac_128kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_pop_aac_192"
+      name: "Pop - Próbka 05"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/pop/AAC/pop_aac_192kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_pop_aac_256"
+      name: "Pop - Próbka 09"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/pop/AAC/pop_aac_256kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_pop_mp3_64"
+      name: "Pop - Próbka 04"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/pop/MP3/pop_mp3_64kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_pop_mp3_96"
+      name: "Pop - Próbka 14"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/pop/MP3/pop_mp3_96kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_pop_mp3_128"
+      name: "Pop - Próbka 02"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/pop/MP3/pop_mp3_128kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_pop_mp3_192"
+      name: "Pop - Próbka 10"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/pop/MP3/pop_mp3_192kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_pop_mp3_256"
+      name: "Pop - Próbka 06"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/pop/MP3/pop_mp3_256kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_pop_opus_64"
+      name: "Pop - Próbka 12"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/pop/Opus/pop_opus_64kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_pop_opus_96"
+      name: "Pop - Próbka 08"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/pop/Opus/pop_opus_96kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_pop_opus_128"
+      name: "Pop - Próbka 03"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/pop/Opus/pop_opus_128kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_pop_opus_192"
+      name: "Pop - Próbka 07"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/pop/Opus/pop_opus_192kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_pop_opus_256"
+      name: "Pop - Próbka 11"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/pop/Opus/pop_opus_256kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+
+    # --- ROCK 1 (ACR) ---
+  - type: generic
+    id: "intro_acr_rock1"
+    name: "Kategoria: Rock 1"
+    content: "<h3>Kategoria: Rock 1</h3><p>Kliknij Dalej, aby rozpocząć.</p>"
+  - 
+    - "random"
+    - type: likert_multi_stimulus
+      id: "acr_rock1_aac_96"
+      name: "Rock 1 - Próbka 05"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/rock1/AAC/rock1_aac_96kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_rock1_aac_128"
+      name: "Rock 1 - Próbka 13"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/rock1/AAC/rock1_aac_128kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_rock1_aac_192"
+      name: "Rock 1 - Próbka 09"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/rock1/AAC/rock1_aac_192kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_rock1_aac_256"
+      name: "Rock 1 - Próbka 01"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/rock1/AAC/rock1_aac_256kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_rock1_mp3_64"
+      name: "Rock 1 - Próbka 07"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/rock1/MP3/rock1_mp3_64kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_rock1_mp3_96"
+      name: "Rock 1 - Próbka 03"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/rock1/MP3/rock1_mp3_96kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_rock1_mp3_128"
+      name: "Rock 1 - Próbka 11"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/rock1/MP3/rock1_mp3_128kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_rock1_mp3_192"
+      name: "Rock 1 - Próbka 14"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/rock1/MP3/rock1_mp3_192kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_rock1_mp3_256"
+      name: "Rock 1 - Próbka 06"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/rock1/MP3/rock1_mp3_256kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_rock1_opus_64"
+      name: "Rock 1 - Próbka 10"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/rock1/Opus/rock1_opus_64kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_rock1_opus_96"
+      name: "Rock 1 - Próbka 02"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/rock1/Opus/rock1_opus_96kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_rock1_opus_128"
+      name: "Rock 1 - Próbka 08"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/rock1/Opus/rock1_opus_128kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_rock1_opus_192"
+      name: "Rock 1 - Próbka 12"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/rock1/Opus/rock1_opus_192kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_rock1_opus_256"
+      name: "Rock 1 - Próbka 04"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/rock1/Opus/rock1_opus_256kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+
+    # --- ROCK 2 (ACR) ---
+  - type: generic
+    id: "intro_acr_rock2"
+    name: "Kategoria: Rock 2"
+    content: "<h3>Kategoria: Rock 2</h3><p>Kliknij Dalej, aby rozpocząć.</p>"
+  - 
+    - "random"
+    - type: likert_multi_stimulus
+      id: "acr_rock2_aac_96"
+      name: "Rock 2 - Próbka 02"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/rock2/AAC/rock2_aac_96kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_rock2_aac_128"
+      name: "Rock 2 - Próbka 14"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/rock2/AAC/rock2_aac_128kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_rock2_aac_192"
+      name: "Rock 2 - Próbka 08"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/rock2/AAC/rock2_aac_192kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_rock2_aac_256"
+      name: "Rock 2 - Próbka 12"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/rock2/AAC/rock2_aac_256kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_rock2_mp3_64"
+      name: "Rock 2 - Próbka 01"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/rock2/MP3/rock2_mp3_64kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_rock2_mp3_96"
+      name: "Rock 2 - Próbka 05"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/rock2/MP3/rock2_mp3_96kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_rock2_mp3_128"
+      name: "Rock 2 - Próbka 10"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/rock2/MP3/rock2_mp3_128kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_rock2_mp3_192"
+      name: "Rock 2 - Próbka 13"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/rock2/MP3/rock2_mp3_192kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_rock2_mp3_256"
+      name: "Rock 2 - Próbka 03"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/rock2/MP3/rock2_mp3_256kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_rock2_opus_64"
+      name: "Rock 2 - Próbka 06"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/rock2/Opus/rock2_opus_64kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_rock2_opus_96"
+      name: "Rock 2 - Próbka 09"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/rock2/Opus/rock2_opus_96kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_rock2_opus_128"
+      name: "Rock 2 - Próbka 04"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/rock2/Opus/rock2_opus_128kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_rock2_opus_192"
+      name: "Rock 2 - Próbka 11"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/rock2/Opus/rock2_opus_192kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+    - type: likert_multi_stimulus
+      id: "acr_rock2_opus_256"
+      name: "Rock 2 - Próbka 07"
+      content: "Oceń jakość próbki."
+      stimuli: 
+        "Ocena": "configs/resources/audio/rock2/Opus/rock2_opus_256kbps.wav"
+      response:
+        - value: 1
+          label: "Zła"
+        - value: 2
+          label: "Słaba"
+        - value: 3
+          label: "Zadowalająca"
+        - value: 4
+          label: "Dobra"
+        - value: 5
+          label: "Doskonała"
+
+  # --- KONIEC ---
+  - type: finish
+    name: "Koniec"
+    content: "Dziękuję za udział w obu częściach badania! Pobierz wyniki klikając przycisk poniżej."
