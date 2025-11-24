@@ -3,7 +3,7 @@ testId: "inzynierka_bartass"
 bufferSize: 4096
 stopOnErrors: true
 showButtonPreviousPage: true
-remoteService: "service/write.php"
+#remoteService: "service/write.php"
 
 # Globalne ustawienie losowania
 randomize: true
