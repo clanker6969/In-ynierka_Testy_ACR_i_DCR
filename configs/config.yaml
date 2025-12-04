@@ -1,6 +1,6 @@
 testName: "Badanie Inżynierskie"
 testId: "inzynierka_bartass"
-bufferSize: 4096
+bufferSize: 8192
 stopOnErrors: true
 showButtonPreviousPage: true
 remoteService: null
