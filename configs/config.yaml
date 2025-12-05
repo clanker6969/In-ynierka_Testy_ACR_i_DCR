@@ -12,10 +12,10 @@ pages:
   # ==========================================================
   # INSTRUKCJA WSTĘPNA
   # ==========================================================
-15:   - type: generic
-16:     id: "intro"
-17:     name: "Instrukcja UCM"
-18:     content: "<b>Witaj</b><br>Sprawdzisz zaraz szybki słuchawki. W pierwszej części oceniasz jakość próbek względem Referencji.<br>Posłuchaj sie małe trzaski przy przełączaniu kanałów, nie jestem w stanie tego do końca usunąć, można je olać. Na końcu przy kliknięciu 'send results' wyślij plik json proszę o wysłanie go do mnie :)). W pierwszej części oceniasz jakość próbek względem Referencji.</b>"
+  - type: generic
+    id: "intro"
+    name: "Instrukcja UCM"
+    content: "<b>Witaj</b><br>Sprawdzisz zaraz szybki słuchawki. W pierwszej części oceniasz jakość próbek względem Referencji.<br>Posłuchaj sie małe trzaski przy przełączaniu kanałów, nie jestem w stanie tego do końca usunąć, można je olać. Na końcu przy kliknięciu 'send results' wyślij plik json proszę o wysłanie go do mnie :)). W pierwszej części oceniasz jakość próbek względem Referencji.</b>"
 
   # ==========================================================
   # CZĘŚĆ 1: MUSHRA
