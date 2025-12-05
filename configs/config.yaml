@@ -1,6 +1,6 @@
 testName: "Badanie Inżynierskie"
 testId: "inzynierka_bartass"
-bufferSize: 16384
+bufferSize: 8192
 stopOnErrors: true
 showButtonPreviousPage: true
 remoteService: null
@@ -15,7 +15,7 @@ pages:
   - type: generic
     id: "intro"
     name: "Instrukcja DCR"
-    content: "<h3>Witaj!</h3><p>Proszę założyć słuchawki. W pierwszej części oceniasz jakość próbek względem Referencji.</p>"
+    content: "<h3>Dobry.</h3><p>Proszę założyć słuchawki. Mogą pojawić się małe trzaski przy przełączaniu kanałów, nie jestem w stanie tego do końca usunąć, można je olać. Na końcu przy kliknięciu "send results" wypluje plik .json proszę o wysłanie go do mnie :)). W pierwszej części oceniasz jakość próbek względem Referencji.</p>"
 
   # ==========================================================
   # CZĘŚĆ 1: MUSHRA
@@ -32,7 +32,7 @@ pages:
       includeReference: false
       createAnchor35: false
       createAnchor70: false
-      stimuli: { A: "configs/resources/audio/classics/AAC/classics_aac_32kbps.wav" }
+      stimuli: { A: "configs/resources/audio/classics/AAC/classics_aac_32kbps.wav"}
     - type: mushra
       id: "classics_aac_64"
       name: "Classics - Test_09"
