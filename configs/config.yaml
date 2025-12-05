@@ -14,8 +14,8 @@ pages:
   # ==========================================================
   - type: generic
     id: "intro"
-    name: "Instrukcja UCM"
-    content: "<b>Witaj</b><br>Sprawdzisz zaraz szybki słuchawki. W pierwszej części oceniasz jakość próbek względem Referencji.<br>Posłuchaj sie małe trzaski przy przełączaniu kanałów, nie jestem w stanie tego do końca usunąć, można je olać. Na końcu przy kliknięciu 'send results' wyślij plik json proszę o wysłanie go do mnie :)). W pierwszej części oceniasz jakość próbek względem Referencji.</b>"
+    name: "Instrukcja DCR"
+    content: "<h3>Dobry.</h3><p>Proszę założyć słuchawki. Mogą pojawić się małe trzaski przy przełączaniu kanałów, nie jestem w stanie tego do końca usunąć, można je olać. Na końcu przy kliknięciu \"send results\" wypluje plik .json proszę o wysłanie go do mnie :)). W pierwszej części oceniasz jakość próbek względem Referencji.</p>"
 
   # ==========================================================
   # CZĘŚĆ 1: MUSHRA
